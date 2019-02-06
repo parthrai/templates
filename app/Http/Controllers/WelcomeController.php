@@ -16,16 +16,19 @@ class WelcomeController extends Controller
 
 
 
+
+
+
         $headers = [
 
             'Accept'        => 'application/json',
         ];
         $client = new Client();
-        $result = $client->post('http://cms2.test/api/test3', [
+        $result = $client->post('https://bhmlabs.ca/api/test3', [
             'headers' => $headers,
             'form_params' => [
 
-                'site' => 'site2.bhmlabs.ca',
+                'site' => $host,
 
             ]
         ]);
