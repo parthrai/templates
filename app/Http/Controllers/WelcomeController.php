@@ -33,15 +33,19 @@ class WelcomeController extends Controller
             ]
         ]);
 
-    //  return $result->getBody()->getContents();
+     // return $result->getBody()->getContents();
 
         $response=  json_decode($result->getBody()->getContents(),true);
+
 
         $title = $response['site']['title'];
         $nav = $response['site']['nav'];
         $header = $response['site']['header'];
 
+         $footer = base64_decode($response['site']['footer']['content']);
 
-        return view('welcome')->with(['title'=>$title , 'nav'=> $nav , 'header' => $header]);
+
+
+        return view('welcome')->with(['title'=>$title , 'nav'=> $nav , 'header' => $header ,'footer'=>$footer]);
     }
 }

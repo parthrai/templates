@@ -745,6 +745,8 @@
                 <span class="logo t">Yalp</span>
             </a>
 
+            {{!! $footer !!}}
+
             <p class="footer-phrase">Don't wait - <b>Get Yalp</b> now!</p>
 
             <p class="copyright">
@@ -763,54 +765,6 @@
     </footer>
 </div>
 
-<!-- FOR DEMO PURPOSES ONLY -->
-<div class="header-selector selector-closed" id="header-selector">
-    <span class="tab">
-        <i class="fa-cog fa-spin"></i>
-    </span>
-
-    <h3>Home page variants</h3>
-    <ul class="list list-unstyled clearfix">
-        <li><a href="index.html">Image</a></li>
-        <li><a href="solid-header.html">Solid color</a></li>
-        <li><a href="video-header.html">Video</a></li>
-        <li><a href="typed-header.html">Typed</a></li>
-    </ul>
-
-    <h4>Configure color scheme</h4>
-    <ul class="color-scheme list-unstyled clearfix">
-        <li class="default"><i data-rel="default" class="bg styleswitch"><i class="sm"></i></i></li>
-        <li class="turquoise"><i data-rel="turquoise" class="bg styleswitch"><i class="sm"></i></i></li>
-        <li class="violet"><i data-rel="violet" class="bg styleswitch"><i class="sm"></i></i></li>
-        <li class="wisteria"><i data-rel="wisteria" class="bg styleswitch"><i class="sm"></i></i></li>
-        <li class="carrot"><i data-rel="carrot" class="bg styleswitch"><i class="sm"></i></i></li>
-        <li class="sunflower"><i data-rel="sunflower" class="bg styleswitch"><i class="sm"></i></i></li>
-    </ul>
-
-    <p><small>Or construct your own</small></p>
-    <form action="themes/select/" class="form" id="theme-selector">
-        <div id="color-picker-1" class="input-group input-group-sm colorpicker-component">
-            <input value="#ffffff" type="text" class="form-control" name="Pallete[color1]" required />
-            <span class="input-group-addon"><i></i></span>
-        </div>
-        <div id="color-picker-2" class="input-group input-group-sm colorpicker-component">
-            <input value="#e6ecf2" type="text" class="form-control" name="Pallete[color2]" required/>
-            <span class="input-group-addon"><i></i></span>
-        </div>
-        <div id="color-picker-3" class="input-group input-group-sm colorpicker-component">
-            <input value="#fe3f51" type="text" class="form-control" name="Pallete[color3]" required/>
-            <span class="input-group-addon"><i></i></span>
-        </div>
-        <div id="color-picker-4" class="input-group input-group-sm colorpicker-component">
-            <input value="#008ed6" type="text" class="form-control" name="Pallete[color4]" required/>
-            <span class="input-group-addon"><i></i></span>
-        </div>
-
-        <div class="clearfix"></div>
-        <button class="btn btn-default btn-pallete btn-primary" data-loading-text="Generating schema..." id="theme-submit" type="submit">Change scheme</button>
-    </form>
-</div>
-<!-- ENDDEMO  -->
 
 <script src="js/lib.js"></script>
 <script src="js/yalp.js"></script>
