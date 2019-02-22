@@ -67,13 +67,15 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
 
-                    @foreach($nav as $key => $link)
-
-                        <li><a href="{{$link}}">{{$key}}</a></li>
 
 
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
 
-                    @endforeach
+
+
+
 
                 </ul>
             </div>
@@ -745,7 +747,7 @@
                 <span class="logo t">Yalp</span>
             </a>
 
-            {{!! $footer !!}}
+
 
             <p class="footer-phrase">Don't wait - <b>Get Yalp</b> now!</p>
 
